@@ -20,3 +20,5 @@ app.get('/js' , (req, res) => {
 app.listen(4000, () => {
     console.log('app is up on 4000')
 })
+
+app.use(express.static(`${__dirname}/public`))
